@@ -24,6 +24,15 @@
             Console.WriteLine(Id);
             #endregion
 
+            #region ValueType
+            int x;
+            x = 3;
+            int y = 4;
+            y = x;
+            Console.WriteLine(y);
+            x++;
+            Console.WriteLine(x); 
+            #endregion
         }
     }
 }
