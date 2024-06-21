@@ -172,12 +172,25 @@ namespace Demo
             ///int y = int.Parse(x);
             ///Console.WriteLine(y);
 
-           /// string x = "true";
+            /// string x = "true";
             ///x = "Hamada";
-           /// bool flag = Convert.ToBoolean(x);
+            /// bool flag = Convert.ToBoolean(x);
             ///Console.WriteLine(flag); // true
 
+            #region TryParse
+            String x = "10";
+            int y;
+           bool flag= int.TryParse(x, out y); //[ if castting filed ,No Exception will be thrown]
+            Console.WriteLine(flag); //true
+            Console.WriteLine(y);//10
 
+
+            String x = "ahmed";
+            int y;
+            bool flag = int.TryParse(x, out y);
+            Console.WriteLine(flag); //fulse
+            Console.WriteLine(y); //0
+            #endregion
         }
     }
 }
