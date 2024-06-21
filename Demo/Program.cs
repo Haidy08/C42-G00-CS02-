@@ -74,6 +74,21 @@ namespace Demo
 
             Console.WriteLine(P1.X);
             #endregion
+
+            
+            #region Fractions and Discard
+            float X = 25.5f;
+            double Y = 2.5;
+            decimal Z = 555.66M;
+
+
+            //Discard => just for reabability
+            long Number = 100_000_000_000;
+
+            Console.WriteLine(Number);
+
+            #endregion
+
         }
     }
 }
