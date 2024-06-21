@@ -1,7 +1,13 @@
 ﻿using System.Drawing;
+using System.Runtime.InteropServices;
 
 namespace Demo
 {
+    class point 
+    {
+        public int X;
+        public int Y;
+    }
     internal class Program
     {
         static void Main(string[] args)
@@ -53,7 +59,7 @@ namespace Demo
             #endregion
 
             #region Reference Type
-
+            
             Point P1;
             /// Declare for references of type 'point', references to Null
             /// This References 'p1' can  refer to an object from type 'point' or anther type 'Inhereting from point
@@ -88,6 +94,39 @@ namespace Demo
             Console.WriteLine(Number);
 
             #endregion
+            #region Implict casting VS Explict Casting
+            ///int x = 10;
+            /// long y =/*long*/ x;// Implict Casting
+            ///Console.WriteLine(y);//10
+
+            ///long x = 8 ;
+            /// x = 445555527552454;
+
+
+            ///int y = x.GetType() == typeof(int) ? (int)x : 0;// Explict Casting [unsafe casting] 
+
+            ///   Console.WriteLine(y); 
+
+            ///  checked
+            /// {
+            ///  int y = /*int*/ x;// Explict Casting [unsafe casting] 
+
+            /// unchecked
+            ///  {
+            ///  Console.WriteLine(y); 
+            /// }
+            //// }
+            ///int x = 5;
+            ///double y = x;
+            /// Console.WriteLine(y);
+          
+            
+           /// double x = 5.5;
+            ///int y = x; // explicit casting
+           /// Console.WriteLine(y);//5
+
+            #endregion
+
 
         }
     }
