@@ -191,6 +191,32 @@ namespace Demo
             Console.WriteLine(flag); //fulse
             Console.WriteLine(y); //0
             #endregion
+
+            #region Opretators Priotry [Precdence]and Asscoitivity
+
+            int Equation = 5 + 6 * 2;
+            Console.WriteLine(Equation);
+            /*
+             * unrey operator (prefix)
+             * Round Braces
+             * / %
+             * + - 
+             */
+            int a = 10;
+            int b = 20;
+            int d = 8;
+            int c = 2;
+
+            int Equation;
+            Equation = (a + b) * c / d; //(30)*4
+
+            Equation = ((a + b) * c) / d; //(30*2)/8
+
+            Equation = (a + b) * (c / d); // 30*(2/8)
+
+            Equation = a + (b * c) / d;  // 40/18+10
+
+            #endregion
         }
     }
 }
