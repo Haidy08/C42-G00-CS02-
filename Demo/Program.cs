@@ -119,13 +119,63 @@ namespace Demo
             ///int x = 5;
             ///double y = x;
             /// Console.WriteLine(y);
-          
-            
-           /// double x = 5.5;
+
+
+            /// double x = 5.5;
             ///int y = x; // explicit casting
-           /// Console.WriteLine(y);//5
+            /// Console.WriteLine(y);//5
 
             #endregion
+
+
+            #region Covert
+            //[Convert: is A Class containing set f methods used for casting from datatype to anther ]
+            Console.Write("please enter your name");
+            string name = Console.ReadLine() ?? "NA";
+
+            Console.Write("please enter your age");
+            int Age = Convert.ToInt32 (Console.ReadLine());
+
+            Console.Write("please enter your salary");
+            decimal Salary = Convert.ToDecimal(Console.ReadLine());
+
+            Console.Clear();
+            Console.Beep(324,3000);
+            Console.WriteLine("your name is" + name);
+            Console.WriteLine("your Age is" + Age);
+            Console.WriteLine("your salary is" + Salary);
+
+            #endregion
+
+            #region Parse
+            //[Parse: is A Class containing set f methods used for casting from String to the coller datatype]
+            Console.Write("please enter your name");
+            string name = Console.ReadLine() ?? "NA";
+
+            Console.Write("please enter your age");
+            int Age = int.Parse(Console.ReadLine() ?? "0");
+
+            Console.Write("please enter your salary");
+            decimal Salary = Decimal.Parse(Console.ReadLine() ?? "0");
+
+            Console.Clear();
+            Console.Beep(324, 3000);
+            Console.WriteLine("your name is" + name);
+            Console.WriteLine("your Age is" + Age);
+            Console.WriteLine("your salary is" + Salary);
+
+
+            #endregion
+
+            /// string x = "10",
+            /// x = "ahmed";
+            ///int y = int.Parse(x);
+            ///Console.WriteLine(y);
+
+           /// string x = "true";
+            ///x = "Hamada";
+           /// bool flag = Convert.ToBoolean(x);
+            ///Console.WriteLine(flag); // true
 
 
         }
